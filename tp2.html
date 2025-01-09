@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau</title>
+    <link rel="stylesheet" href="tp2.css">
+   
+</head>
+
+<body>
+
+
+
+
+
+
+    <header>
+        <div class="container">
+            <input type="text" id="name" name="name" placeholder="Nom">
+            <input type="text" id="interest" name="interest" placeholder="Intérêt">
+            <input type="text" id="age" name="age" placeholder="Age">
+            <input type="submit" value="Ajouter" onclick="getTableau()">
+            <input type="submit" value="Annuler" onclick="deleteRow()">
+            <input type="submit" value="Supprimer" onclick="displayButton()">
+            <input id = "byn" type="submit" style="display:none;" value="X" onclick="deleteOneRow()">
+            
+
+
+        </div>
+
+
+
+    </header>
+    <div>
+        <table style="margin-top: 100px; margin-left: 600px;">
+            <caption>
+                Front-end web developer course 2021
+            </caption>
+            <thead>
+                <tr>
+                    <th scope="col">Person</th>
+                    <th scope="col">Most interest in</th>
+                    <th scope="col">Age</th>
+                    <th scope="col" id="byn2" style="display:none"></th>
+                </tr>
+            </thead>
+            <tbody id="tableau_1">
+                
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row" colspan="2">Average age</th>
+                    <td id= "avg"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+<script   src="tp2.js"></script>
+</body>
+
+</html>
